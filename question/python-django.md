@@ -12,13 +12,18 @@
 - 비동기로 저장후 파일 이름 반환
 
 3. rest_framework.authtoken를 사용했을때 이점
-- 
+- drf에서 지원하는 라이브러리를 사용했습니다. 지원하는 라이브러리를 사용하면 좋은점이 간단하게 사용할수있기 때문입니다.
 
-4. django_ratelimit를 사용한 이유와 다른게 있다면 뭐가있나요?
-- 
+4. rest_framework.authtoken의 토큰과 jwt의 토큰의 차이점
+- drf_token은 서버측에서 토큰을 관리하고 jwt는 모든 정보가 토큰 자체에 포함되어있어 서버측에서 관리를 안해도 되어서 서버 부담이 안됩니다.
 
-5. apscheduler를 사용한이유
-- 
+
+5. django_ratelimit를 사용한 이유는 뭔가요?
+- 특정 뷰 함수에 대해서 요청 제한을 설정해야되는 상황이여서 사용하였습니다.
+
+6. apscheduler를 사용한이유
+- Schedule 라이브러리도 있긴하지만 apscheduler이 더 유연한 스케줄링 라이브러리라서 apscheduler를 사용했습니다.
+
 # 출처
 - 블로그: https://hyun-am-coding.tistory.com/entry/%EC%99%9C-Django%EC%97%90%EC%84%9C-PostgreSQL%EC%9D%84-DB%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C
 - django.contrib.postgres: https://docs.djangoproject.com/en/3.0/ref/contrib/postgres/
